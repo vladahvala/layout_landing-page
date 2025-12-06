@@ -1,0 +1,95 @@
+.top-bar{
+  p{
+    margin: 0;
+  }
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: $margin-mobile;
+
+  &__icons {
+    display: flex;
+    align-items: flex-start;
+    gap: $topbar-icons-gap-mobile;
+  }
+
+  &__logo{
+    display: flex;
+    width: nth($topbar-logo-mobile, 1);
+    height: nth($topbar-logo-mobile, 2);
+  }
+
+  &__info {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+
+    margin-top: $topbar-info-offset-mobile;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    &.is-visible {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__place,
+  &__phone{
+    font-size: $font-size-s;
+    line-height: $line-height-xs;
+    font-weight: $topbar-text-font-weight;
+    color: $topbar-text-color;
+  }
+
+  &__place{
+    &--gap{
+      padding-top: $topbar-place-gap;
+    }
+  }
+
+  @include onTablet {
+    padding: $margin-tablet;
+
+    &__logo{
+      display: flex;
+      width: nth($topbar-logo-tablet, 1);
+      height: nth($topbar-logo-tablet, 2);
+    }
+
+    &__place,
+    &__phone{
+      font-size: $font-size-m;
+      line-height: $line-height-m;
+    }
+
+    &__info {
+      margin-top: $topbar-info-offset-tablet;
+    }
+  }
+
+  @include onDesktop {
+    padding: $margin-desktop;
+
+    &__logo{
+      display: flex;
+      width: nth($topbar-logo-desktop, 1);
+      height: nth($topbar-logo-desktop, 2);
+    }
+
+    &__place,
+    &__phone{
+      font-size: $font-size-m;
+      line-height: $line-height-m;
+    }
+
+    &__info {
+      margin-top: $topbar-info-offset-desktop;
+    }
+  }
+}

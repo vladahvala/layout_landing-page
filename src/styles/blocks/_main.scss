@@ -1,0 +1,35 @@
+.main{
+  padding-inline: $sectionGapInlineM;
+
+  & section{
+    margin-top: $sectionGapM;
+  }
+
+  & section + section {
+    margin-block: $sectionGapM;
+  }
+
+  @include onTablet{
+    padding-inline: $sectionGapInlineT;
+
+    & section{
+      margin-top: $sectionGapT;
+    }
+
+    & section + section {
+      margin-block: $sectionGapT;
+    }
+  }
+
+  @include onDesktop{
+    padding-inline: $sectionGapInlineD;
+
+    & section{
+      margin-top: $sectionGapD;
+    }
+
+    & section + section {
+      margin-block: $sectionGapD;
+    }
+  }
+}

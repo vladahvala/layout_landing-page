@@ -1,0 +1,15 @@
+// Example breakpoints
+$tablet: 768px;
+$desktop: 1200px;
+
+@mixin onTablet {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin onDesktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}

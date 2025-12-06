@@ -1,0 +1,228 @@
+// Typography
+$fontFamily: Cinzel, serif;
+$fontWeightMed: 700;
+$fontWeightMin: 400;
+
+// Colors
+$white: #fff;
+$accent-main: #D12D35;
+
+// Layout
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1024px;
+
+// Font styles
+$font-size-xs: 12px;
+$font-size-s: 14px;
+$font-size-m: 16px;
+$font-size-m-lg: 22px;
+$font-size-l: 24px;
+$font-size-xl: 48px;
+$font-size-header-m: 40px;
+$font-size-header-t: 64px;
+$font-size-header-d: 80px;
+
+// Line heights
+$line-height-xs: 16px;
+$line-height-s: 20px;
+$line-height-m: 27px;
+$line-height-m-lg: 22px;
+$line-height-lg: 30px;
+$line-height-l: 48px;
+
+$line-height-header-m: 40px;
+$line-height-header-t: 64px;
+$line-height-header-d: 80px;
+
+// Margins
+$margin-desktop: 50px 120px 0;
+$margin-tablet: 50px 72px 0;
+$margin-mobile: 20px 25px 0;
+
+// Letter spacing
+$lsNormal: 0px;
+$lsMedium: 1px;
+$lsBig: 2px;
+
+// Icons
+$iconSize: 32px;
+$iconGapDT: 55px;
+$iconGapM: 24px;
+
+// Section
+$sectionGapInlineD: 120px;
+$sectionGapInlineT: 72px;
+$sectionGapInlineM: 20px;
+
+$sectionGapD: 140px;
+$sectionGapT: 140px;
+$sectionGapM: 100px;
+
+
+//--------------------------------Header-------------------------------------
+// Header padding
+$header-padding-mobile: 8px 16px;
+$header-padding-tablet: 8px 16px;
+$header-padding-desktop: 8px 16px;
+
+// Header font sizes
+$header-font-size: (
+  mobile: 40px,
+  tablet: 64px,
+  desktop: 80px
+);
+
+// Header line heights
+$header-line-height: (
+  mobile: 40px,
+  tablet: 64px,
+  desktop: 80px
+);
+
+// Header title top margin
+$header-title-margin: (
+  mobile: 141px,
+  tablet: 141px,
+  desktop: 83px
+);
+
+// Header title color & font weight
+$header-title-color: $white;
+$header-title-font-weight: $fontWeightMed;
+
+
+//--------------------------------Top-bar-------------------------------------
+$topbar-text-font-weight: $fontWeightMed;
+$topbar-text-color: $white;
+
+// TopBar Gaps
+$topbar-icons-gap-mobile: 16px;
+$topbar-place-gap: 8px;
+
+// TopBar Logo
+$topbar-logo-mobile: 64px 46px;
+$topbar-logo-tablet: 87px 65px;
+$topbar-logo-desktop: 87px 65px;
+
+// TopBar info offset
+$topbar-info-offset-mobile: calc((nth($topbar-padding-mobile, 1) - 1em) / 2);
+$topbar-info-offset-tablet: calc((nth($topbar-padding-tablet, 1) - 1em) / 2);
+$topbar-info-offset-desktop: calc((nth($topbar-padding-desktop, 1) - 1em) / 2);
+
+
+//--------------------------------Menu-------------------------------------
+$menu-text-font-weight: $fontWeightMed;
+
+// Menu Padding
+$menu-padding-mobile: $header-padding-mobile;
+$menu-padding-tablet: $header-padding-tablet;
+$menu-padding-desktop: $header-padding-desktop;
+
+// Menu Gaps
+$menu-row-gap: 8px;
+$menu-call-to-order-padding-bottom: 7px;
+
+
+//--------------------------------Nav----------------------------------------------
+$nav-list-margin-bottom: 48px;
+$nav-list-gap: 32px;
+
+$nav-link-underline-thickness: 1px;
+$nav-link-underline-offset: 8px;
+
+
+//--------------------------------Museum-hours-------------------------------------
+$museumhours-text-font-weight: $fontWeightMed;
+
+// MuseumHours columns
+$museumhours-columns-mobile: 2;
+$museumhours-columns-tablet: 6;
+$museumhours-columns-desktop: 12;
+
+// MuseumHours Gaps
+$museumhours-column-gap: 24px;
+$museumhours-block-gap: 24px;
+$museumhours-list-gap: 8px;
+
+// MuseumHours Titles
+$museumhours-title-container-margin-bottom: 32px;
+$museumhours-title-letter-spacing: -1.5px;
+$museumhours-titles-margin-bottom: 15px;
+
+// MuseumHours paddings
+$museumhours-plan-padding-bottom: 2px;
+
+// MuseumHours Closed on
+$museumhours-list-closed-on-margin-top: 16px;
+$museumhours-list-closed-on-margin-bottom: 24px;
+
+
+//--------------------------------Exhibition-------------------------------------
+$exhibition-text-font-weight: $fontWeightMed;
+
+// Exhibition Columns
+$exhibition-columns-mobile: 2;
+$exhibition-columns-tablet: 6;
+$exhibition-columns-desktop: 12;
+
+// Exhibition Gaps
+$exhibition-column-gap: 24px;
+$exhibition-row-gap: 48px;
+$exhibition-header-row-gap: 12px;
+
+// Exhibition Button
+$exhibition-button-height: 56px;
+
+// Exhibition Titles
+$exhibition-title-letter-spacing: -1.5px;
+
+// Exhibition Images
+$exhibition-image-height-mobile-1-2-6-7: 130px;
+$exhibition-image-height-mobile-3-4-5: 87px;
+
+$exhibition-image-height-tablet-1-2-6-7: 186px;
+$exhibition-image-height-tablet-3-4: 284px;
+
+$exhibition-image-height-desktop-all: 320px;
+
+
+//--------------------------------Explore-------------------------------------
+$explore-text-font-weight: $fontWeightMed;
+
+// Explore Columns
+$explore-columns-mobile: 1;
+$explore-columns-tablet: 6;
+$explore-columns-desktop: 12;
+
+// Explore Gaps
+$explore-column-gap: 24px;
+$explore-row-gap: 48px;
+
+// Explore Titles
+$explore-title-letter-spacing: -1.5px;
+
+
+//--------------------------------Contact-------------------------------------
+$contact-text-font-weight: $fontWeightMed;
+
+// Contact Columns
+$contact-columns-mobile: 2;
+$contact-columns-tablet: 6;
+$contact-columns-desktop: 12;
+
+// Contact Gaps
+$contact-column-gap: 24px;
+$contact-row-gap: 48px;
+
+// Contact Titles
+$contact-title-letter-spacing: -1.5px;
+
+// Contact Padding
+$contact-padding-bold: 16px;
+$contact-padding-norm: 8px;
+
+// Contact Heights
+$contact-input-height: 48px;
+$contact-textarea-height: 144px;
+$contact-button-height: 56px;

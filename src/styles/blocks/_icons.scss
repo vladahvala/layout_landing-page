@@ -1,0 +1,18 @@
+.icon{
+  display: block;
+  height: $iconSize;
+  width: $iconSize;
+
+  &--phone{
+    background-image: url('../images/icons/icon-phone.png');
+    margin-right: 40px;
+  }
+
+  &--menu{
+    background-image: url('../images/icons/icon-burger-menu.png');
+  }
+
+  &--close{
+    background-image: url('../images/icons/icon-close.png');
+  }
+}

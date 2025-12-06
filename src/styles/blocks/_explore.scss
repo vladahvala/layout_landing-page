@@ -1,0 +1,93 @@
+.explore {
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  column-gap: $explore-column-gap;
+  row-gap: $explore-row-gap;
+  --columns: $explore-columns-mobile;
+
+  &__title {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin: 0;
+    font-size: $font-size-xl;
+    line-height: $line-height-l;
+    font-weight: $explore-text-font-weight;
+    letter-spacing: $explore-title-letter-spacing;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  &__image {
+    width: 100%;
+    grid-column: 1 / -1;
+    height: 277px;
+  }
+
+  &__heading {
+    width: 100%;
+    text-align: center;
+    font-size: $font-size-l;
+    font-weight: $explore-text-font-weight;
+    color: $accent-main;
+    margin-top: 32px;
+  }
+
+  &__text {
+    width: 100%;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: $font-size-m;
+    line-height: $line-height-m;
+    font-weight: $fontWeightMin;
+    margin-top: 4px;
+  }
+
+  @include onTablet {
+    --columns: $explore-columns-tablet;
+
+    &__title {
+      grid-column: 1 / -1;
+    }
+
+    &__image {
+      justify-self: center;
+      height: 387px;
+    }
+
+    &__card{
+      grid-column: 2/6;
+      margin-top: 32px;
+    }
+  }
+
+  @include onDesktop {
+    --columns: $explore-columns-desktop;
+
+    &__title {
+      grid-column: 1 / -1;
+    }
+
+    &__image {
+      justify-self: center;
+      height: 320px;
+    }
+
+    &__image--8 { grid-column: 1 / 5;}
+    &__image--9 { grid-column: 5 / 9;}
+    &__image--10 { grid-column: 9 / -1;}
+
+    &__card--collection { grid-column: 1 / 5;}
+    &__card--travel { grid-column: 5 / 9;}
+    &__card--tours { grid-column: 9 / -1;}
+
+    &__card{
+      margin-top: 32px;
+    }
+  }
+}

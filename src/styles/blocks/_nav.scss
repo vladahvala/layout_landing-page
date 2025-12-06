@@ -1,0 +1,29 @@
+.nav{
+  color: $white;
+
+  &__list{
+    margin-bottom: $nav-list-margin-bottom;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: $nav-list-gap;
+  }
+
+  &__link {
+    color: inherit;
+    font-size: $font-size-m-lg;
+    line-height: $line-height-m-lg;
+    letter-spacing: $lsBig;
+
+    text-decoration: underline;
+    text-decoration-thickness: $nav-link-underline-thickness;
+    text-decoration-color: transparent;
+    text-underline-offset: $nav-link-underline-offset;
+    transition: text-decoration-color 0.3s ease;
+
+    &:hover {
+      text-decoration-color: $white;
+    }
+  }
+}

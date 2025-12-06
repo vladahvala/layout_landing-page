@@ -1,0 +1,103 @@
+
+.museum-hours{
+  --columns: $museumhours-columns-mobile;
+  display: grid;
+  column-gap: $museumhours-column-gap;
+  grid-template-columns: repeat(var(--columns), 1fr);
+
+  &__title-container{
+    grid-column: 1/-1;
+    margin: 0;
+    margin-bottom: $museumhours-title-container-margin-bottom;
+  }
+
+  &__title{
+    margin: 0;
+    font-size: $font-size-xl;
+    line-height: $line-height-l;
+    font-weight: $museumhours-text-font-weight;
+    letter-spacing: $museumhours-title-letter-spacing;
+  }
+
+  &__titles{
+    font-weight: $museumhours-text-font-weight;
+    font-size: $font-size-l;
+    line-height: $line-height-lg;
+    margin-bottom: $museumhours-titles-margin-bottom;
+  }
+
+  &__plan{
+    font-size: $font-size-xs;
+    font-weight: $museumhours-text-font-weight;
+    color: $accentMain;
+    letter-spacing: $lsNormal;
+    margin: 0;
+    padding-bottom: $museumhours-plan-padding-bottom;
+  }
+
+  &__content{
+    grid-column: 1/-1;
+  }
+
+  &__block{
+    display: flex;
+    column-gap: $museumhours-block-gap;
+  }
+
+  &__list{
+    &--info{
+      display: flex;
+      list-style: none;
+      flex-direction: column;
+      row-gap: $museumhours-list-gap;
+      font-size: $font-size-m;
+      line-height: $line-height-m;
+      font-weight: $museumhours-text-font-weight;
+      padding: 0;
+      margin: 0;
+    }
+
+    &--closed-on{
+      list-style: none;
+      padding: 0;
+      margin-top: $museumhours-list-closed-on-margin-top;
+      margin-bottom: $museumhours-list-closed-on-margin-bottom;
+    }
+  }
+
+  &__item{
+    &--schedule{
+      font-weight: $museumhours-text-font-weight;
+    }
+
+    &--work{
+      font-weight: $fontWeightMin;
+    }
+  }
+
+  @include onTablet{
+    --columns: $museumhours-columns-tablet;
+
+    &__title-container{
+      grid-column: 1/4;
+    }
+
+    &__content{
+      grid-column: 4/-1;
+    }
+  }
+
+  @include onDesktop{
+    --columns: $museumhours-columns-desktop;
+
+    &__title-container{
+      grid-column: 1/5;
+    }
+
+    &__content{
+      grid-column: 6/-1;
+    }
+  }
+}
+
+
