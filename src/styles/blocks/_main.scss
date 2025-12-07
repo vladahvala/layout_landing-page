@@ -9,7 +9,7 @@
     margin-block: $sectionGapM;
   }
 
-  @include onTablet{
+  @include on-tablet{
     padding-inline: $sectionGapInlineT;
 
     & section{
@@ -21,7 +21,7 @@
     }
   }
 
-  @include onDesktop{
+  @include on-desktop{
     padding-inline: $sectionGapInlineD;
 
     & section{

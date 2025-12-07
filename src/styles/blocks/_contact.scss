@@ -1,9 +1,10 @@
 .contact {
   display: grid;
+
   --columns: $contact-columns-mobile;
+
   grid-template-columns: repeat(var(--columns), 1fr);
-  column-gap: $contact-column-gap;
-  row-gap: $contact-row-gap;
+  gap: $contact-row-gap $contact-column-gap;
 
   p{
     margin: 0;
@@ -76,18 +77,18 @@
       margin-top: 32px;
       cursor: pointer;
     }
+
+    &--name,
+    &--email{
+      margin-bottom: 16px;
+    }
+
+    &--text{
+      height: $contact-textarea-height;
+    }
   }
 
-  #message-name,
-  #message-email{
-    margin-bottom: 16px;
-  }
-
-  #message{
-    height: $contact-textarea-height;
-  }
-
-  @include onTablet {
+  @include on-tablet {
     --columns: $contact-columns-tablet;
 
     &__avenue {
@@ -106,7 +107,7 @@
     }
   }
 
-  @include onDesktop {
+  @include on-desktop {
     --columns: $contact-columns-desktop;
 
     &__avenue {

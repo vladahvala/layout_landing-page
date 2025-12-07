@@ -7,29 +7,29 @@
   background-position: center;
 
   &__title {
-    margin-top: map-get($header-title-margin, mobile);
+    margin-top: map.get($header-title-margin, mobile);
     justify-self: center;
     text-align: center;
-    font-size: map-get($header-font-size, mobile);
+    font-size: map.get($header-font-size, mobile);
     font-weight: $header-title-font-weight;
-    line-height: map-get($header-line-height, mobile);
+    line-height: map.get($header-line-height, mobile);
     color: $header-title-color;
     font-family: $font-family-header;
   }
 
-  @media (min-width: $tablet) {
+  @include on-tablet {
     &__title{
-      margin-top: map-get($header-title-margin, tablet);
-      font-size: map-get($header-font-size, tablet);
-      line-height: map-get($header-line-height, tablet);
+      margin-top: map.get($header-title-margin, tablet);
+      font-size: map.get($header-font-size, tablet);
+      line-height: map.get($header-line-height, tablet);
     }
   }
 
-  @media (min-width: $desktop) {
+  @include on-desktop {
     &__title{
-      margin-top: map-get($header-title-margin, desktop);
-      font-size: map-get($header-font-size, desktop);
-      line-height: map-get($header-line-height, desktop);
+      margin-top: map.get($header-title-margin, mobile);
+      font-size: map.get($header-font-size, mobile);
+      line-height: map.get($header-line-height, mobile);
     }
   }
 }

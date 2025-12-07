@@ -23,11 +23,11 @@
   &__content{
     padding: $margin-mobile;
 
-    @include onTablet {
+    @include on-tablet {
       padding: $margin-tablet;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       padding: $margin-desktop;
     }
   }

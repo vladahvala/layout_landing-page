@@ -1,16 +1,14 @@
-@import './utils/_variables';
-@import './utils/_mixins';
-@import './blocks/_page.scss';
-@import './blocks/_header.scss';
-@import './blocks/_top-bar.scss';
-@import './blocks/_icons.scss';
-@import './blocks/_menu.scss';
-@import './blocks/_nav.scss';
-@import './blocks/_main.scss';
-@import './blocks/_museum-hours.scss';
-@import './blocks/_exhibition.scss';
-@import './blocks/_explore.scss';
-@import './blocks/_contact.scss';
-@import './blocks/_footer.scss';
-
-
+@import 'utils/variables';
+@import 'utils/mixins';
+@import 'blocks/page';
+@import 'blocks/header';
+@import 'blocks/top-bar';
+@import 'blocks/icons';
+@import 'blocks/menu';
+@import 'blocks/nav';
+@import 'blocks/main';
+@import 'blocks/museum-hours';
+@import 'blocks/exhibition';
+@import 'blocks/explore';
+@import 'blocks/contact';
+@import 'blocks/footer';

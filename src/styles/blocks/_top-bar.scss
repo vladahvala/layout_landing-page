@@ -2,6 +2,7 @@
   p{
     margin: 0;
   }
+
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -15,8 +16,8 @@
 
   &__logo{
     display: flex;
-    width: nth($topbar-logo-mobile, 1);
-    height: nth($topbar-logo-mobile, 2);
+    width: list.nth($topbar-logo-mobile, 1);
+    height: list.nth($topbar-logo-mobile, 2);
   }
 
   &__info {
@@ -53,13 +54,13 @@
     }
   }
 
-  @include onTablet {
+  @include on-tablet {
     padding: $margin-tablet;
 
     &__logo{
       display: flex;
-      width: nth($topbar-logo-tablet, 1);
-      height: nth($topbar-logo-tablet, 2);
+      width: list.nth($topbar-logo-tablet, 1);
+      height: list.nth($topbar-logo-tablet, 2);
     }
 
     &__place,
@@ -73,13 +74,13 @@
     }
   }
 
-  @include onDesktop {
+  @include on-desktop {
     padding: $margin-desktop;
 
     &__logo{
       display: flex;
-      width: nth($topbar-logo-desktop, 1);
-      height: nth($topbar-logo-desktop, 2);
+      width: list.nth($topbar-logo-desktop, 1);
+      height: list.nth($topbar-logo-desktop, 2);
     }
 
     &__place,

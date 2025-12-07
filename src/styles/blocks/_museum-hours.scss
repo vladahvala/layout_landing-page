@@ -1,6 +1,7 @@
 
 .museum-hours{
   --columns: $museumhours-columns-mobile;
+
   display: grid;
   column-gap: $museumhours-column-gap;
   grid-template-columns: repeat(var(--columns), 1fr);
@@ -75,7 +76,7 @@
     }
   }
 
-  @include onTablet{
+  @include on-tablet{
     --columns: $museumhours-columns-tablet;
 
     &__title-container{
@@ -87,7 +88,7 @@
     }
   }
 
-  @include onDesktop{
+  @include on-desktop{
     --columns: $museumhours-columns-desktop;
 
     &__title-container{

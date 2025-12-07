@@ -1,7 +1,7 @@
 // Typography
-$fontFamily: Cinzel, serif;
-$fontWeightMed: 700;
-$fontWeightMin: 400;
+$font-family: Cinzel, serif;
+$font-weight-med: 700;
+$font-weight-min: 400;
 
 // Colors
 $white: #fff;
@@ -30,7 +30,6 @@ $line-height-m: 27px;
 $line-height-m-lg: 22px;
 $line-height-lg: 30px;
 $line-height-l: 48px;
-
 $line-height-header-m: 40px;
 $line-height-header-t: 64px;
 $line-height-header-d: 80px;
@@ -41,26 +40,24 @@ $margin-tablet: 50px 72px 0;
 $margin-mobile: 20px 25px 0;
 
 // Letter spacing
-$lsNormal: 0px;
-$lsMedium: 1px;
-$lsBig: 2px;
+$ls-normal: 0;
+$ls-medium: 1px;
+$ls-big: 2px;
 
 // Icons
-$iconSize: 32px;
-$iconGapDT: 55px;
-$iconGapM: 24px;
+$icon-size: 32px;
+$icon-gap-dt: 55px;
+$icon-gap-m: 24px;
 
 // Section
-$sectionGapInlineD: 120px;
-$sectionGapInlineT: 72px;
-$sectionGapInlineM: 20px;
+$section-gap-inline-d: 120px;
+$section-gap-inline-t: 72px;
+$section-gap-inline-m: 20px;
+$section-gap-d: 140px;
+$section-gap-t: 140px;
+$section-gap-m: 100px;
 
-$sectionGapD: 140px;
-$sectionGapT: 140px;
-$sectionGapM: 100px;
-
-
-//--------------------------------Header-------------------------------------
+// --------------------------------Header-------------------------------------
 // Header padding
 $header-padding-mobile: 8px 16px;
 $header-padding-tablet: 8px 16px;
@@ -89,11 +86,11 @@ $header-title-margin: (
 
 // Header title color & font weight
 $header-title-color: $white;
-$header-title-font-weight: $fontWeightMed;
+$header-title-font-weight: $font-weight-med;
 
-
-//--------------------------------Top-bar-------------------------------------
-$topbar-text-font-weight: $fontWeightMed;
+// --------------------------------Top-bar-------------------------------------
+// Topbar text
+$topbar-text-font-weight: $font-weight-med;
 $topbar-text-color: $white;
 
 // TopBar Gaps
@@ -106,13 +103,13 @@ $topbar-logo-tablet: 87px 65px;
 $topbar-logo-desktop: 87px 65px;
 
 // TopBar info offset
-$topbar-info-offset-mobile: calc((nth($topbar-padding-mobile, 1) - 1em) / 2);
-$topbar-info-offset-tablet: calc((nth($topbar-padding-tablet, 1) - 1em) / 2);
-$topbar-info-offset-desktop: calc((nth($topbar-padding-desktop, 1) - 1em) / 2);
+$topbar-info-offset-mobile: calc((list.nth($topbar-padding-mobile, 1) - 1em) / 2);
+$topbar-info-offset-tablet: calc((list.nth($topbar-padding-tablet, 1) - 1em) / 2);
+$topbar-info-offset-desktop: calc((list.nth($topbar-padding-desktop, 1) - 1em) / 2);
 
-
-//--------------------------------Menu-------------------------------------
-$menu-text-font-weight: $fontWeightMed;
+// --------------------------------Menu-------------------------------------
+// Menu text
+$menu-text-font-weight: $font-weight-med;
 
 // Menu Padding
 $menu-padding-mobile: $header-padding-mobile;
@@ -123,17 +120,18 @@ $menu-padding-desktop: $header-padding-desktop;
 $menu-row-gap: 8px;
 $menu-call-to-order-padding-bottom: 7px;
 
-
-//--------------------------------Nav----------------------------------------------
+// --------------------------------Nav-----------------------------------------
+// Nav list
 $nav-list-margin-bottom: 48px;
 $nav-list-gap: 32px;
 
+// Nav link underline
 $nav-link-underline-thickness: 1px;
 $nav-link-underline-offset: 8px;
 
-
-//--------------------------------Museum-hours-------------------------------------
-$museumhours-text-font-weight: $fontWeightMed;
+// --------------------------------Museum-hours--------------------------------
+// MuseumHours text
+$museumhours-text-font-weight: $font-weight-med;
 
 // MuseumHours columns
 $museumhours-columns-mobile: 2;
@@ -157,9 +155,9 @@ $museumhours-plan-padding-bottom: 2px;
 $museumhours-list-closed-on-margin-top: 16px;
 $museumhours-list-closed-on-margin-bottom: 24px;
 
-
-//--------------------------------Exhibition-------------------------------------
-$exhibition-text-font-weight: $fontWeightMed;
+// --------------------------------Exhibition---------------------------------
+// Exhibition text
+$exhibition-text-font-weight: $font-weight-med;
 
 // Exhibition Columns
 $exhibition-columns-mobile: 2;
@@ -180,15 +178,13 @@ $exhibition-title-letter-spacing: -1.5px;
 // Exhibition Images
 $exhibition-image-height-mobile-1-2-6-7: 130px;
 $exhibition-image-height-mobile-3-4-5: 87px;
-
 $exhibition-image-height-tablet-1-2-6-7: 186px;
 $exhibition-image-height-tablet-3-4: 284px;
-
 $exhibition-image-height-desktop-all: 320px;
 
-
-//--------------------------------Explore-------------------------------------
-$explore-text-font-weight: $fontWeightMed;
+// --------------------------------Explore-----------------------------------
+// Explore text
+$explore-text-font-weight: $font-weight-med;
 
 // Explore Columns
 $explore-columns-mobile: 1;
@@ -202,9 +198,9 @@ $explore-row-gap: 48px;
 // Explore Titles
 $explore-title-letter-spacing: -1.5px;
 
-
-//--------------------------------Contact-------------------------------------
-$contact-text-font-weight: $fontWeightMed;
+// --------------------------------Contact-----------------------------------
+// Contact text
+$contact-text-font-weight: $font-weight-med;
 
 // Contact Columns
 $contact-columns-mobile: 2;

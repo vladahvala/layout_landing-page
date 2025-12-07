@@ -2,13 +2,13 @@
 $tablet: 768px;
 $desktop: 1200px;
 
-@mixin onTablet {
+@mixin on-tablet {
   @media (min-width: #{$tablet}) {
     @content;
   }
 }
 
-@mixin onDesktop {
+@mixin on-desktop {
   @media (min-width: #{$desktop}) {
     @content;
   }
