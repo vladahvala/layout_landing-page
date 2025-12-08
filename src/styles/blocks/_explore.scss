@@ -1,6 +1,5 @@
 .explore {
   display: grid;
-  grid-template-columns: repeat(var(--columns), 1fr);
   gap: $explore-row-gap $explore-column-gap;
   grid-template-columns: repeat($explore-columns-mobile, 1fr);
 
