@@ -2,8 +2,7 @@
   display: grid;
   grid-template-columns: repeat(var(--columns), 1fr);
   gap: $explore-row-gap $explore-column-gap;
-
-  --columns: $explore-columns-mobile;
+  grid-template-columns: repeat($explore-columns-mobile, 1fr);
 
   &__title {
     grid-column: 1 / -1;
@@ -29,6 +28,16 @@
     height: 277px;
   }
 
+  &__link {
+    display: block;
+    overflow: hidden;
+    transition: transform 0.4s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
   &__heading {
     width: 100%;
     text-align: center;
@@ -44,12 +53,12 @@
     font-family: Roboto, sans-serif;
     font-size: $font-size-m;
     line-height: $line-height-m;
-    font-weight: $fontWeightMin;
+    font-weight: $font-weight-min;
     margin-top: 4px;
   }
 
   @include on-tablet {
-    --columns: $explore-columns-tablet;
+    grid-template-columns: repeat($explore-columns-tablet, 1fr);
 
     &__title {
       grid-column: 1 / -1;
@@ -67,7 +76,8 @@
   }
 
   @include on-desktop {
-    --columns: $explore-columns-desktop;
+    grid-template-columns: repeat($explore-columns-desktop, 1fr);
+
 
     &__title {
       grid-column: 1 / -1;
@@ -78,9 +88,9 @@
       height: 320px;
     }
 
-    &__image--8 { grid-column: 1 / 5;}
-    &__image--9 { grid-column: 5 / 9;}
-    &__image--10 { grid-column: 9 / -1;}
+    &__link--8 { grid-column: 1 / 5;}
+    &__link--9 { grid-column: 5 / 9;}
+    &__link--10 { grid-column: 9 / -1;}
 
     &__card--collection { grid-column: 1 / 5;}
     &__card--travel { grid-column: 5 / 9;}

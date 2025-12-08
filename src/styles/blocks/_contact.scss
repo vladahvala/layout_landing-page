@@ -1,13 +1,15 @@
 .contact {
   display: grid;
-
-  --columns: $contact-columns-mobile;
-
-  grid-template-columns: repeat(var(--columns), 1fr);
+  grid-template-columns: repeat($contact-columns-mobile, 1fr);
   gap: $contact-row-gap $contact-column-gap;
 
   p{
     margin: 0;
+  }
+
+  a{
+    text-decoration: none;
+    color: black;
   }
 
   &__title {
@@ -29,17 +31,26 @@
 
     &-title {
       font-size: $font-size-m;
+
+      &--bold {
+        padding-bottom: $contact-padding-bold;
+      }
+
+      &--norm {
+        padding-bottom: $contact-padding-norm;
+      }
+
+      &--address,
+      &--norm{
+        &:hover{
+          color: $accent-main;
+        }
+      }
     }
     &-text {
-      font-weight: $fontWeightMin;
+      font-weight: $font-weight-min;
       font-size: $font-size-s;
       padding-bottom: 4px;
-    }
-    &--bold {
-      padding-bottom: $contact-padding-bold;
-    }
-    &--norm {
-      padding-bottom: $contact-padding-norm;
     }
   }
 
@@ -56,13 +67,27 @@
       height: $contact-input-height;
       box-sizing: border-box;
       font-size: $font-size-s;
-      font-weight: $fontWeightMin;
+      font-weight: $font-weight-min;
 
       &::placeholder {
-        font-family: $fontFamily;
-        color: #999;
+        font-family: $font-family;
+        color: $placeholder-text;
         font-size: $font-size-s;
-        font-weight: $fontWeightMin;
+        font-weight: $font-weight-min;
+      }
+
+      &:hover::placeholder {
+        color: black;
+      }
+
+
+      &--name,
+      &--email{
+        margin-bottom: 16px;
+      }
+
+      &--text{
+        height: $contact-textarea-height;
       }
     }
 
@@ -76,20 +101,19 @@
       align-items: center;
       margin-top: 32px;
       cursor: pointer;
-    }
 
-    &--name,
-    &--email{
-      margin-bottom: 16px;
-    }
+      &:hover{
+        background-color: $button-hover-color;
+      }
 
-    &--text{
-      height: $contact-textarea-height;
+      &:active{
+        background-color: $button-pressed-color;
+      }
     }
   }
 
   @include on-tablet {
-    --columns: $contact-columns-tablet;
+    grid-template-columns: repeat($contact-columns-tablet, 1fr);
 
     &__avenue {
       grid-column: 1 / 4;
@@ -108,7 +132,7 @@
   }
 
   @include on-desktop {
-    --columns: $contact-columns-desktop;
+    grid-template-columns: repeat($contact-columns-desktop, 1fr);
 
     &__avenue {
       grid-column: 1 / 4;

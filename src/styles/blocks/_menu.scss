@@ -1,4 +1,16 @@
 .menu{
+  p{
+    margin: 0;
+  }
+
+  .top-bar{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: $accent-main;
+    padding-bottom: $topBar-padding;
+  }
+
   box-sizing: border-box;
   padding: $menu-padding-mobile;
   height: 100vh;
@@ -6,6 +18,7 @@
   font-weight: $menu-text-font-weight;
   text-transform: uppercase;
   color: $white;
+  overflow: auto;
 
   position: fixed;
   top: 0;
@@ -39,7 +52,8 @@
     margin-bottom: $font-size-m;
   }
 
-  &__phone{
+  &__phone,
+  &__place{
     display: block;
     color: inherit;
     text-decoration: none;
@@ -47,10 +61,16 @@
     line-height: $line-height-m;
   }
 
+  &__phone{
+    &:hover{
+      color: black;
+    }
+  }
+
   &__call-to-order{
     font-size: $font-size-xs;
     line-height: $line-height-xs;
-    letter-spacing: $lsBig;
+    letter-spacing: $ls-big;
     color: inherit;
     padding-bottom: $menu-call-to-order-padding-bottom;
     border-bottom: 1px solid $white;

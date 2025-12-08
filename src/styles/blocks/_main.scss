@@ -1,35 +1,35 @@
 .main{
-  padding-inline: $sectionGapInlineM;
+  padding-inline: $section-gap-inline-m;
 
   & section{
-    margin-top: $sectionGapM;
+    margin-top: $section-gap-m;
   }
 
   & section + section {
-    margin-block: $sectionGapM;
+    margin-block: $section-gap-m;
   }
 
   @include on-tablet{
-    padding-inline: $sectionGapInlineT;
+    padding-inline: $section-gap-inline-t;
 
     & section{
-      margin-top: $sectionGapT;
+      margin-top: $section-gap-t;
     }
 
     & section + section {
-      margin-block: $sectionGapT;
+      margin-block: $section-gap-t;
     }
   }
 
   @include on-desktop{
-    padding-inline: $sectionGapInlineD;
+    padding-inline: $section-gap-inline-d;
 
     & section{
-      margin-top: $sectionGapD;
+      margin-top: $section-gap-d;
     }
 
     & section + section {
-      margin-block: $sectionGapD;
+      margin-block: $section-gap-d;
     }
   }
 }

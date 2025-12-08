@@ -3,6 +3,10 @@
 
   &__body {
     margin: 0;
-    font-family: $fontFamily;
+    font-family: $font-family;
+
+    &:has(.menu:target) {
+      overflow: hidden;
+    }
   }
 }

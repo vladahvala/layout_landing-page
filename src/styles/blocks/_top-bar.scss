@@ -1,16 +1,22 @@
+@use "sass:list";
+
 .top-bar{
   p{
     margin: 0;
   }
 
+  a{
+    text-decoration: none;
+  }
+
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   padding: $margin-mobile;
 
   &__icons {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: $topbar-icons-gap-mobile;
   }
 
@@ -25,14 +31,9 @@
     display: flex;
     flex-direction: column;
 
-    margin-top: $topbar-info-offset-mobile;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-
-    visibility: hidden;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    visibility: hidden;
+    transition: opacity 0.4s ease;
 
     &.is-visible {
       visibility: visible;
@@ -46,6 +47,12 @@
     line-height: $line-height-xs;
     font-weight: $topbar-text-font-weight;
     color: $topbar-text-color;
+  }
+
+  &__phone{
+    &:hover{
+      color: $accent-main;
+    }
   }
 
   &__place{
@@ -68,10 +75,6 @@
       font-size: $font-size-m;
       line-height: $line-height-m;
     }
-
-    &__info {
-      margin-top: $topbar-info-offset-tablet;
-    }
   }
 
   @include on-desktop {
@@ -88,9 +91,7 @@
       font-size: $font-size-m;
       line-height: $line-height-m;
     }
-
-    &__info {
-      margin-top: $topbar-info-offset-desktop;
-    }
   }
 }
+
+

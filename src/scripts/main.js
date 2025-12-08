@@ -6,3 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
     numbers.classList.toggle('is-visible');
   });
 });
+
+const form = document.querySelector('.contact__form');
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+  this.reset();
+});

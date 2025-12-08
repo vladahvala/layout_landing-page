@@ -4,7 +4,7 @@
 
   display: grid;
   column-gap: $museumhours-column-gap;
-  grid-template-columns: repeat(var(--columns), 1fr);
+  grid-template-columns: repeat($museumhours-columns-mobile, 1fr);
 
   &__title-container{
     grid-column: 1/-1;
@@ -30,8 +30,8 @@
   &__plan{
     font-size: $font-size-xs;
     font-weight: $museumhours-text-font-weight;
-    color: $accentMain;
-    letter-spacing: $lsNormal;
+    color: $accent-main;
+    letter-spacing: $ls-normal;
     margin: 0;
     padding-bottom: $museumhours-plan-padding-bottom;
   }
@@ -72,12 +72,12 @@
     }
 
     &--work{
-      font-weight: $fontWeightMin;
+      font-weight: $font-weight-min;
     }
   }
 
   @include on-tablet{
-    --columns: $museumhours-columns-tablet;
+    grid-template-columns: repeat($museumhours-columns-tablet, 1fr);
 
     &__title-container{
       grid-column: 1/4;
@@ -89,7 +89,7 @@
   }
 
   @include on-desktop{
-    --columns: $museumhours-columns-desktop;
+    grid-template-columns: repeat($museumhours-columns-desktop, 1fr);
 
     &__title-container{
       grid-column: 1/5;

@@ -1,3 +1,5 @@
+@use "sass:map";
+
 .header{
   box-sizing: border-box;
   padding: $header-padding-mobile;
@@ -14,7 +16,6 @@
     font-weight: $header-title-font-weight;
     line-height: map.get($header-line-height, mobile);
     color: $header-title-color;
-    font-family: $font-family-header;
   }
 
   @include on-tablet {
@@ -27,9 +28,9 @@
 
   @include on-desktop {
     &__title{
-      margin-top: map.get($header-title-margin, mobile);
-      font-size: map.get($header-font-size, mobile);
-      line-height: map.get($header-line-height, mobile);
+      margin-top: map.get($header-title-margin, desktop);
+      font-size: map.get($header-font-size, desktop);
+      line-height: map.get($header-line-height, desktop);
     }
   }
 }

@@ -14,13 +14,13 @@
     color: inherit;
     font-size: $font-size-m-lg;
     line-height: $line-height-m-lg;
-    letter-spacing: $lsBig;
+    letter-spacing: $ls-big;
 
     text-decoration: underline;
     text-decoration-thickness: $nav-link-underline-thickness;
     text-decoration-color: transparent;
     text-underline-offset: $nav-link-underline-offset;
-    transition: text-decoration-color 0.3s ease;
+    transition: text-decoration-color 0.4s ease;
 
     &:hover {
       text-decoration-color: $white;
