@@ -2,14 +2,21 @@
   display: block;
   height: $icon-size;
   width: $icon-size;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 
   &--phone{
     background-image: url('../images/icons/icon-phone.png');
     margin-right: 40px;
   }
 
-  &--menu{
+  &--menu {
     background-image: url('../images/icons/icon-burger-menu.png');
+
+    &:hover {
+      background-image: url('../images/icons/icon-burger-menu-hover.png');
+    }
   }
 
   &--close{

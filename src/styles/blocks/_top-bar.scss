@@ -18,6 +18,11 @@
     display: flex;
     align-items: center;
     gap: $topbar-icons-gap-mobile;
+
+    &:has(.icon--phone:hover) .top-bar__info {
+      visibility: visible;
+      opacity: 1;
+    }
   }
 
   &__logo{
@@ -34,11 +39,6 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.4s ease;
-
-    &.is-visible {
-      visibility: visible;
-      opacity: 1;
-    }
   }
 
   &__place,
@@ -93,5 +93,3 @@
     }
   }
 }
-
-

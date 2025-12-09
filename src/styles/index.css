@@ -1,12 +1,13 @@
-.page {
-  scroll-behavior: smooth;
-}
 .page__body {
   margin: 0;
   font-family: Cinzel, serif;
 }
 .page__body:has(.menu:target) {
   overflow: hidden;
+}
+
+html, body {
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -58,6 +59,10 @@
   align-items: center;
   gap: 16px;
 }
+.top-bar__icons:has(.icon--phone:hover) .top-bar__info {
+  visibility: visible;
+  opacity: 1;
+}
 .top-bar__logo {
   display: flex;
   width: 64px;
@@ -70,10 +75,6 @@
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.4s ease;
-}
-.top-bar__info.is-visible {
-  visibility: visible;
-  opacity: 1;
 }
 .top-bar__place, .top-bar__phone {
   font-size: 14px;
@@ -120,6 +121,9 @@
   display: block;
   height: 32px;
   width: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 .icon--phone {
   background-image: url("../images/icons/icon-phone.png");
@@ -127,6 +131,9 @@
 }
 .icon--menu {
   background-image: url("../images/icons/icon-burger-menu.png");
+}
+.icon--menu:hover {
+  background-image: url("../images/icons/icon-burger-menu-hover.png");
 }
 .icon--close {
   background-image: url("../images/icons/icon-close.png");
