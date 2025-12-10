@@ -56,6 +56,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 0;
+    font-family: $font-family;
+    font-weight: $font-weight-med;
+    font-size: $font-size-m;
 
     &:hover{
       background-color: $button-hover-color;

@@ -96,6 +96,10 @@
       height: $contact-button-height;
       background-color: $accent-main;
       color: $white;
+      border: 0;
+      font-family: $font-family;
+      font-weight: $font-weight-med;
+      font-size: $font-size-m;
       display: flex;
       justify-content: center;
       align-items: center;

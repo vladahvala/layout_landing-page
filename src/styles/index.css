@@ -404,6 +404,10 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 0;
+  font-family: Cinzel, serif;
+  font-weight: 700;
+  font-size: 16px;
 }
 .exhibition__button:hover {
   background-color: #AE1C23;
@@ -726,6 +730,10 @@ html, body {
   height: 56px;
   background-color: #D12D35;
   color: #fff;
+  border: 0;
+  font-family: Cinzel, serif;
+  font-weight: 700;
+  font-size: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
