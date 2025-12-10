@@ -14,23 +14,6 @@
   align-items: center;
   padding: $margin-mobile;
 
-  &__icons {
-    display: flex;
-    align-items: center;
-    gap: $topbar-icons-gap-mobile;
-
-    &:has(.icon--phone:hover) .top-bar__info {
-      visibility: visible;
-      opacity: 1;
-    }
-  }
-
-  &__logo{
-    display: flex;
-    width: list.nth($topbar-logo-mobile, 1);
-    height: list.nth($topbar-logo-mobile, 2);
-  }
-
   &__info {
     text-align: right;
     display: flex;
@@ -39,6 +22,18 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.4s ease;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: $topbar-icons-gap-mobile;
+  }
+
+  &__logo{
+    display: flex;
+    width: list.nth($topbar-logo-mobile, 1);
+    height: list.nth($topbar-logo-mobile, 2);
   }
 
   &__place,
@@ -90,6 +85,13 @@
     &__phone{
       font-size: $font-size-m;
       line-height: $line-height-m;
+    }
+
+    &__info{
+      &.is-visible{
+        opacity: 1;
+        visibility: visible;
+      }
     }
   }
 }
